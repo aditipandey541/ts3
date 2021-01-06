@@ -17,18 +17,18 @@ function preload(){
   
 }
 function setup() {
-  createCanvas(900,400);
+  createCanvas(1000,400);
   engine = Engine.create();
   world = engine.world;
   Engine.run(engine);
   ground = new Ground();
-  stand1 = new Stand(390,300,250,10);
+  stand1 = new Stand(380,300,250,10);
   stand2 = new Stand(700,200,200,10);
  
   //level one
   block1 = new Block(300,275,30,40);
   console.log(block1);
-  block2 = new Block(330,275,30,40);
+  block2 = new Block(340,275,30,40);
   block3 = new Block(360,275,30,40);
   block4 = new Block(390,275,30,40);
   block5 = new Block(420,275,30,40);
@@ -76,7 +76,7 @@ function draw() {
   text(mouseX + ',' + mouseY, 10, 15);
   textSize(20);
   fill("lightyellow");
-  text("Drag the polygon to destroy the blocks",300,30);
+  text("Drag the polygon to destroy the blocks!!!!!!",300,30);
   text("SCORE : "+score,750,40);
   textSize(10);
   text("Press Space to get a second Chance to Play!!",650 ,350);
